@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/myStyle.css">
+    <link rel="stylesheet" href="css/slimbox2.css">
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.js" integrity="sha512-MXWlk6UOVfE/OdjLyby2zlldm3K36O43PyJmAmXfib7wWEUkediNdwRx4rrvM1GtP1yO+sDLCkvXV6o03sQHmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/myScript.js"></script>
+    <script src="js/slimbox2.js"></script>
+</head>
+<body>      
+  <div class="container-fluid p-0"></div>  
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+    <!-- Brand -->
+    <a class="navbar-brand ms-4" href="#"><img src="images/logo.png" alt="無恩咖啡logo" title="無恩咖啡" style="width:200px;"></a>
+   
+    <!-- Toggler/collapsible Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse justify-content-end me-4" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#news">最新消息</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#coffee-menu">咖啡餐點</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#food-info">美食資訊</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-us">與我聯繫</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="#locations">分店位置</a>
+        </li> 
+      </ul>
+    </div> 
+  </nav>
+
+  <!-- 輪播 -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+     <!-- 指示符 -->
+     <div class="carousel-indicators">
+       <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+       <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+       <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+     </div>
+     
+     <!-- 輪播圖片 -->
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <img src="images/輪播1.png" class="d-block" style="width:100%">
+       </div>
+       <div class="carousel-item">
+         <img src="images/輪播2.png" class="d-block" style="width:100%">
+       </div>
+       <div class="carousel-item">
+         <img src="images/輪播3.png" class="d-block" style="width:100%">
+       </div>
+     </div>
+     
+     <!-- 左右切換按鈕 -->
+     <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon"></span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+       <span class="carousel-control-next-icon"></span>
+     </button>
+  </div>
+<!-- 卡片 -->
+<div class="container px-4 col fade-in-up" id="news">
+  <h2 class="mt-3">最新消息</h2>
+  <div class="row row-cols-4 gx-4 pt-2 ">
+    <div class="col">
+      <div class="card h-100">
+        <a href="images/l-intro1.jpg" rel="lightbox">
+        <img src="images/l-intro1.jpg" class="card-img-top" alt="...">
+      </a>
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Coffea arabica L.咖啡</h5>
+          <p class="card-text">咖啡原產熱帶非洲，早在西元 575 年，阿拉伯西南部的葉門人就開始使用，西歐開始飲用約在 1615 年。世界咖啡的供應
+            大部份來自巴西，其次是哥倫比亞。南回歸線與北回歸線間及赤道附近的熱帶地區，亦所謂的世界咖啡生長帶。
+            
+            咖啡樹的分類很複雜，有許多種類多樣性與系品種。其中最具代表性、最商業實用性的─阿拉比卡咖啡 (coffee. arabica) ，及
+            另一種以其產量最著名的羅巴斯達(robusta) 為主要兩大品種。雖許多人致力於研究咖啡樹的混種，以提高咖啡的產量及抗病力，然而，混種的味道就是比不上純種的味道。果實含有膠質，採收後送入脫肉機，脫去果皮果肉，再發酵脫除膠質，僅存種子
+            就是俗稱咖啡豆。再用脫殼機脫除種子果殼，並經磨光機磨去銀膜，並磨光豆面，再焙炒研末，既成精製咖啡。
+            
+            咖啡樹是一種常綠喬木，開白色的小花，結綠色的果實，一直到成熟時才轉為紅色。正常的一株咖啡樹通常可以長到 5~10 公尺高，不過為了採收方便，豆農們常將其修剪至 2 公尺以下。開花後結出一顆顆深綠色橢圓的果實，成熟的果實由深綠轉成鮮紅色，由於色澤與櫻桃相近，故暱稱之「櫻桃」，而每顆「櫻桃」裡又含有一對種子，這對種子就是所謂的咖啡豆。咖啡樹是一種
+            常綠喬木，開白色的小花，結綠色的果實，一直到成熟時才轉為紅色。正常的一株咖啡樹通常可以長到 5~10 公尺高，不過為了採收方便，豆農們常將其修剪至 2 公尺以下。開花後結出一顆顆深綠色橢圓的果實，成熟的果實由深綠轉成鮮紅色，由於色澤與櫻桃相近，故暱稱之「櫻桃」，而每顆「櫻桃」裡又含有一對種子，這對種子就是所謂的咖啡豆。(植物面面觀)</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary more-btn" type="button" data-bs-toggle="modal" data-bs-target="#cardModal">More</button>
+          </div>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <a href="images/article1.png" rel="lightbox">
+        <img src="images/article1.png" class="card-img-top" alt="...">
+      </a>
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Coffea arabica L.咖啡</h5>
+          <p class="card-text">咖啡原產熱帶非洲，早在西元 575 年，阿拉伯西南部的葉門人就開始使用，西歐開始飲用約在 1615 年。世界咖啡的供應
+            大部份來自巴西，其次是哥倫比亞。南回歸線與北回歸線間及赤道附近的熱帶地區，亦所謂的世界咖啡生長帶。
+            
+            咖啡樹的分類很複雜，有許多種類多樣性與系品種。其中最具代表性、最商業實用性的─阿拉比卡咖啡 (coffee. arabica) ，及
+            另一種以其產量最著名的羅巴斯達(robusta) 為主要兩大品種。雖許多人致力於研究咖啡樹的混種，以提高咖啡的產量及抗病力，然而，混種的味道就是比不上純種的味道。果實含有膠質，採收後送入脫肉機，脫去果皮果肉，再發酵脫除膠質，僅存種子
+            就是俗稱咖啡豆。再用脫殼機脫除種子果殼，並經磨光機磨去銀膜，並磨光豆面，再焙炒研末，既成精製咖啡。
+            
+            咖啡樹是一種常綠喬木，開白色的小花，結綠色的果實，一直到成熟時才轉為紅色。正常的一株咖啡樹通常可以長到 5~10 公尺高，不過為了採收方便，豆農們常將其修剪至 2 公尺以下。開花後結出一顆顆深綠色橢圓的果實，成熟的果實由深綠轉成鮮紅色，由於色澤與櫻桃相近，故暱稱之「櫻桃」，而每顆「櫻桃」裡又含有一對種子，這對種子就是所謂的咖啡豆。咖啡樹是一種
+            常綠喬木，開白色的小花，結綠色的果實，一直到成熟時才轉為紅色。正常的一株咖啡樹通常可以長到 5~10 公尺高，不過為了採收方便，豆農們常將其修剪至 2 公尺以下。開花後結出一顆顆深綠色橢圓的果實，成熟的果實由深綠轉成鮮紅色，由於色澤與櫻桃相近，故暱稱之「櫻桃」，而每顆「櫻桃」裡又含有一對種子，這對種子就是所謂的咖啡豆。(植物面面觀)</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary more-btn" type="button" data-bs-toggle="modal" data-bs-target="#cardModal">More</button>
+          </div>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <a href="images/bee.png" rel="lightbox">
+        <img src="images/bee.png" class="card-img-top" alt="...">
+      </a>
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Coffea arabica L.咖啡</h5>
+          <p class="card-text">咖啡原產熱帶非洲，早在西元 575 年，阿拉伯西南部的葉門人就開始使用，西歐開始飲用約在 1615 年。世界咖啡的供應
+            大部份來自巴西，其次是哥倫比亞。南回歸線與北回歸線間及赤道附近的熱帶地區，亦所謂的世界咖啡生長帶。
+            
+            咖啡樹的分類很複雜，有許多種類多樣性與系品種。其中最具代表性、最商業實用性的─阿拉比卡咖啡 (coffee. arabica) ，及
+            另一種以其產量最著名的羅巴斯達(robusta) 為主要兩大品種。雖許多人致力於研究咖啡樹的混種，以提高咖啡的產量及抗病力，然而，混種的味道就是比不上純種的味道。果實含有膠質，採收後送入脫肉機，脫去果皮果肉，再發酵脫除膠質，僅存種子
+            就是俗稱咖啡豆。再用脫殼機脫除種子果殼，並經磨光機磨去銀膜，並磨光豆面，再焙炒研末，既成精製咖啡。
+            
+            咖啡樹是一種常綠喬木，開白色的小花，結綠色的果實，一直到成熟時才轉為紅色。正常的一株咖啡樹通常可以長到 5~10 公尺高，不過為了採收方便，豆農們常將其修剪至 2 公尺以下。開花後結出一顆顆深綠色橢圓的果實，成熟的果實由深綠轉成鮮紅色，由於色澤與櫻桃相近，故暱稱之「櫻桃」，而每顆「櫻桃」裡又含有一對種子，這對種子就是所謂的咖啡豆。咖啡樹是一種
+            常綠喬木，開白色的小花，結綠色的果實，一直到成熟時才轉為紅色。正常的一株咖啡樹通常可以長到 5~10 公尺高，不過為了採收方便，豆農們常將其修剪至 2 公尺以下。開花後結出一顆顆深綠色橢圓的果實，成熟的果實由深綠轉成鮮紅色，由於色澤與櫻桃相近，故暱稱之「櫻桃」，而每顆「櫻桃」裡又含有一對種子，這對種子就是所謂的咖啡豆。(植物面面觀)</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary more-btn" type="button" data-bs-toggle="modal" data-bs-target="#cardModal">More</button>
+          </div>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <a href="images/photo-1.jpg" rel="lightbox">
+        <img src="images/photo-1.jpg" class="card-img-top" alt="...">
+      </a>
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Coffea arabica L.咖啡</h5>
+          <p class="card-text">咖啡原產熱帶非洲，早在西元 575 年，阿拉伯西南部的葉門人就開始使用，西歐開始飲用約在 1615 年。世界咖啡的供應
+            大部份來自巴西，其次是哥倫比亞。南回歸線與北回歸線間及赤道附近的熱帶地區，亦所謂的世界咖啡生長帶。
+            
+            咖啡樹的分類很複雜，有許多種類多樣性與系品種。其中最具代表性、最商業實用性的─阿拉比卡咖啡 (coffee. arabica) ，及
+            另一種以其產量最著名的羅巴斯達(robusta) 為主要兩大品種。雖許多人致力於研究咖啡樹的混種，以提高咖啡的產量及抗病力，然而，混種的味道就是比不上純種的味道。果實含有膠質，採收後送入脫肉機，脫去果皮果肉，再發酵脫除膠質，僅存種子
+            就是俗稱咖啡豆。再用脫殼機脫除種子果殼，並經磨光機磨去銀膜，並磨光豆面，再焙炒研末，既成精製咖啡。
+            
+            咖啡樹是一種常綠喬木，開白色的小花，結綠色的果實，一直到成熟時才轉為紅色。正常的一株咖啡樹通常可以長到 5~10 公尺高，不過為了採收方便，豆農們常將其修剪至 2 公尺以下。開花後結出一顆顆深綠色橢圓的果實，成熟的果實由深綠轉成鮮紅色，由於色澤與櫻桃相近，故暱稱之「櫻桃」，而每顆「櫻桃」裡又含有一對種子，這對種子就是所謂的咖啡豆。咖啡樹是一種
+            常綠喬木，開白色的小花，結綠色的果實，一直到成熟時才轉為紅色。正常的一株咖啡樹通常可以長到 5~10 公尺高，不過為了採收方便，豆農們常將其修剪至 2 公尺以下。開花後結出一顆顆深綠色橢圓的果實，成熟的果實由深綠轉成鮮紅色，由於色澤與櫻桃相近，故暱稱之「櫻桃」，而每顆「櫻桃」裡又含有一對種子，這對種子就是所謂的咖啡豆。(植物面面觀)</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary more-btn" type="button" data-bs-toggle="modal" data-bs-target="#cardModal">More</button>
+          </div>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<!-- 咖啡餐點 -->
+<div id="coffee-menu" class="container px-4 col">
+  <h2>咖啡餐點</h2>
+  <p>Our coffee menu features a wide variety of blends and flavors to suit every palate. From rich espressos to creamy lattes, we have something for everyone.</p>
+  <p>Check out our menu below:</p>
+  <ul>
+    <li>Espresso</li>
+    <li>Americano</li>
+    <li>Cappuccino</li>
+    <li>Latte</li>
+    <!-- Add more items as needed -->
+  </ul>
+</div>
+
+<!-- 美食資訊 -->
+<div id="food-info" class="container px-4 col">
+  <h2>美食資訊</h2>
+  <p>Along with our delicious coffee, we also offer a range of delectable food options to complement your drink. From savory sandwiches to mouthwatering pastries, we have something to satisfy your cravings.</p>
+  <p>Explore our food offerings:</p>
+  <ul>
+    <li>Grilled Panini</li>
+    <li>Fruit Parfait</li>
+    <li>Croissant</li>
+    <li>Bagel with Cream Cheese</li>
+    <!-- Add more items as needed -->
+  </ul>
+</div>
+
+<!-- 與我聯繫 -->
+<div id="contact-us" class="container px-4 col">
+  <h2>與我聯繫</h2>
+  <p>If you have any questions or feedback, feel free to reach out to us using the contact information below:</p>
+  <p>Email: info@cafe.com</p>
+  <p>Phone: +1234567890</p>
+</div>
+
+<!-- 分店位置 -->
+<div id="store-locations" class="container px-4 col">
+  <h2>分店位置</h2>
+  <p>Visit us at one of our convenient locations:</p>
+  <ul>
+    <li>123 Main Street, City</li>
+    <li>456 Park Avenue, Town</li>
+    <li>789 Oak Lane, Village</li>
+    <!-- Add more locations as needed -->
+  </ul>
+</div>
+ <!-- 模態框 -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImage" class="modal-img" src="" alt="Image" style="width: 100%; height: auto;">
+        <p id="modalText" class="modal-text"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+          <!-- 卡片內容 -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white mt-5">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!-- Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
+  </body>
+  </html>
+  

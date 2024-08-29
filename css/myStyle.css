@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-decoration:  none;
+    
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+
+}
+.bg-grape{
+    background-color: #123 ;
+}
+img {
+    width:100%;
+    height:auto;
+}
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+.container .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .container .col {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  
+  @media (max-width: 1245px) {
+    /* 當螢幕寬度小於768px，一行排2個卡片 */
+    .container .col {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    /* 當螢幕寬度小於px，一行排1個卡片 */
+    .container .col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  }
+  
+  /* 滾動進入視窗時，元素淡入並上升 */
+  .fade-in-up.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* 使用flex布局使卡片正文的內容分佈在上下兩端 */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 確保卡片在滿足內容後能夠伸展 */
+.card {
+  height: 100%;
+  margin-bottom: 20px;
+  transition: transform 0.5s, box-shadow 0.5s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  .card-text {
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* 控制行數 */
+    overflow: hidden;
+  }
+  /* 設置卡片容器的間距 */
+.container .row > .col {
+  margin-bottom: 40px; /* 增加卡片容器底部間隔 */
+}
+/* 確保卡片文本不會被截斷 */
+.card-text {
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 彈窗寬度 */
+.modal-dialog {
+  max-width: 80%;
+}
+
+/* 當螢幕寬度小於577px，彈窗寬度 */
+@media (max-width: 577px) {
+.modal-dialog {
+  max-width: 98%;
+}}
+
+.more-btn {
+  align-self: flex-end;
+  background-color: #343a40; /* dark color */
+  border-color: #343a40;
+}
+.more-btn:hover {
+  background-color: #23272b; /* slightly darker for hover effect */
+  border-color: #1d2124;
+}
+h2 {
+  scroll-margin-bottom: 200px; /* 調整你希望的向下偏移量 */
+  font-weight: bold;
+}
+.modal-img {
+  margin-bottom: 15px; /* 增加彈窗圖片與文字之間的間隔 */
+}
+
+.modal-text {
+  margin-top: 15px; /* 如果需要，也可以增加彈窗文字的上間隔 */
+  line-height: 2; /* 設置行高，增加彈窗行間距 */
+  text-indent: 2em;/* 彈窗文字首行間距 */
+}
